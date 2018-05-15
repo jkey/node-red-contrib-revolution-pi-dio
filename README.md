@@ -9,7 +9,7 @@ Access via the ffi-module.
 A shortended version of the piTest.c is compiled into a shared Library.
 
 Please note, that there is no out of bounds check on the offset value...
-Segmentation Faults can be created easily.
+segmentation faults can be caused easily.
 
 Idea for using ffi comes from this project:
 https://github.com/tmuellerWieland/revpi
