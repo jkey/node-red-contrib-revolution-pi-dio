@@ -1,25 +1,27 @@
 {
-  "name": "revpi",
+  "name": "node-red-contrib-revolution-pi-dio",
   "version": "0.0.1",
-  "description": "A package to access Revolition Pi DI/DO/DIO modules",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Revolition Pi DI/DO/DIO modules based on revpi module",
   "keywords": [
     "revolution",
-    "pi"
+    "pi",
+    "node-red"
   ],
-  "author": "Torsten Mueller <tmueller@wieland.com>",
+  "author": "Georg Weber <web.georg@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "ffi": "^2.2.0",
-    "ref": "^1.3.4",
-    "ref-array": "^1.2.0",
-    "ref-struct": "^1.1.0"
+    "app-root-path" :"^2.0.1"
+
   },
   "directories": {
     "lib": "lib",
     "src": "src"
+  },
+  "node-red": {
+    "nodes": {
+      "revpi-read": "revpi-read.js",
+      "revpi-write": "revpi-write.js"
+    }
   }
 }
