@@ -1,7 +1,7 @@
 var ffi = require('ffi');
 var appRoot = require('app-root-path');
 
-var lib2 = ffi.Library(appRoot + '/lib/libPiTest.so',{
+var lib2 = ffi.Library(appRoot + '/node_modules/node-red-contrib-revolution-pi-dio/lib/libPiTest.so',{
     'getBit': ['int', [ 'uint32', 'uint32']],
     'setBit': ['int', [ 'uint32', 'uint32', 'uint32']]
 });
